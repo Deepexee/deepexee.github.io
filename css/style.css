@@ -1,0 +1,60 @@
+/* Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Body Css */
+
+body{background-color: #191818; color: white;}
+
+/* Header Style */
+
+.header pre{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Conviction */
+
+.conviction{
+    margin-top: 110px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.conviction p, h1{
+    font-size:20px;
+    font-family: Ubuntu;
+}
+
+
+/* Particle Animation */
+
+.particle-text {
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #00ff00;
+    opacity: 0.75;
+    pointer-events: none;
+    animation: particle 2s infinite;
+}
+@keyframes particle {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
