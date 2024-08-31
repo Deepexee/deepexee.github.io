@@ -8,6 +8,12 @@ body{background-color: #191818; color: white;}
 
 /* Header Style */
 
+.header{
+    color: white;
+    text-align: center;
+    margin-right: 25px;
+}
+
 .header pre{
     color: white;
     text-align: center;
@@ -16,11 +22,15 @@ body{background-color: #191818; color: white;}
     justify-content: center;
 }
 
+.header p{
+    font-family: Ubuntu;
+}
+
 
 /* Conviction */
 
 .conviction{
-    margin-top: 110px;
+    margin-top: 50px;
     color: white;
     text-align: center;
     font-size: 15px;
@@ -29,6 +39,50 @@ body{background-color: #191818; color: white;}
 .conviction p, h1{
     font-size:20px;
     font-family: Ubuntu;
+    text-align: center;
+}
+
+
+/* Project Form */
+
+.form {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    align-items: center;
+}
+.form img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.form-content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100px; 
+}
+.form-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+.form-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-left:15px;
+
 }
 
 
@@ -50,11 +104,35 @@ body{background-color: #191818; color: white;}
 }
 @keyframes particle {
     0% {
+        background: #00ff00;
         transform: translate(0, 0);
         opacity: 1;
     }
     100% {
         transform: translate(var(--x), var(--y));
         opacity: 0;
+        background: rgba(255, 0, 0, 0);
+    }
+}
+
+
+/* HELL (responsive) */
+@media only screen and (max-height:1920px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    body{
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5c4484a3-9320-4a7a-83bb-1949c2fd32aa/dbqkn6n-2f53e1a6-b092-4468-97e6-10f66650a199.png/v1/fill/w_1024,h_576,q_80,strp/jojo_s_bizarre_adventure_wallpaper_by_gurinstrange_dbqkn6n-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvNWM0NDg0YTMtOTMyMC00YTdhLTgzYmItMTk0OWMyZmQzMmFhXC9kYnFrbjZuLTJmNTNlMWE2LWIwOTItNDQ2OC05N2U2LTEwZjY2NjUwYTE5OS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ee4r3N-8ybGSrVMk9ysrAx3ZrJoeF5d9HkWsyyRGLws");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+
     }
 }
