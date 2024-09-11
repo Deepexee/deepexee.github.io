@@ -85,6 +85,13 @@ body{background-color: #191818; color: white;}
 
 }
 
+.form-content a{
+text-decoration: none;
+}
+
+.form-content a:hover{
+color:#00ff00;
+}
 
 /* Particle Animation */
 
